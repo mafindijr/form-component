@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="registration page" content="width=device-width, initial-scale=1.0">
+    <title>register</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .container {
+            width: 100vw;
+            height: 100vh;
+            background-color: #2819aaa2;
+            padding: 50px;
+            padding-bottom: 50px;
+        }
+
+        .signup {
+            width: 700px;
+            height: 450px;
+            box-shadow: 1px 0px 6px rgba(0, 0, 0, 0.15);
+            margin-left: auto;
+            margin-right: auto;
+            border-radius: 5px;
+
+        }
+        .item-1 {
+            background-color: #fff;
+            width: 450px;
+            height: 450px;
+            float: right;
+            justify-content: center;
+            align-items: space-around;
+            padding: 20px;
+        }
+        #pic {
+              width: 250px;
+              height: 450px;
+              float: left;
+              
+        }
+
+        #name {
+            border-radius: 20px;
+            padding: 5px;
+            margin: 5px;
+            width: 45%;
+             
+        }
+        #lname {
+            border-radius: 20px;
+            padding: 5px;
+            margin: 5px;
+            width: 45%;
+        
+        }
+        #email {
+            border-radius: 20px;
+            padding: 5px;
+            margin: 5px;
+            width: 95%;
+        }
+        #password {
+            border-radius: 20px;
+            padding: 5px;
+            margin: 5px;
+            width: 45%;
+            
+        }
+        #register {
+            border-radius: 20px;
+            padding: 5px;
+            margin: 5px;
+            width: 95%;
+            background-color: #1310c9;
+            color: #fff;
+        }
+        #registerg {
+            border-radius: 20px;
+            padding: 5px;
+            margin: 5px;
+            width: 95%;
+            background-color: #d61811;
+            color: #fff;
+
+        }
+        #registerf {
+            border-radius: 20px;
+            padding: 5px;
+            margin: 5px;
+            width: 95%;
+            background-color: #1310c9;
+            color: #fff;
+        }
+        @media screen and (max-width: 700px) {
+            #pic {
+                display: none;
+            }
+            .signup {
+                width: 600px;
+                height: 450px;
+                border-radius: 1px 1px 6px rgba(0, 0, 0, 0.15);
+            }
+            .item-1 {
+                width: 600px;
+                height: 450px;
+            }
+            
+        }
+   
+
+
+    </style>
+    
+</head>
+<body>
+    <div class="container">
+        <div class="signup">
+            <img src="project-1/image/Portrait.png" id="pic" alt="a girl">
+            <div class="item-1">
+                <center>
+                    <form  action="submit" method="post">
+               <h1>Create an account!</h1>
+               <br>
+               <input type="text" name="name" id="name" placeholder="First Name">
+               <input type="text" name="lname" id="lname" placeholder="Last Name">
+               <br>
+               <input type="email" name="email" id="email" placeholder="Email Address">
+               <br>
+               <input type="password" id="password" name="password" placeholder="Password">
+               <input type="password" id="password" name="password" placeholder="Repeat Password">
+               <br>
+               <button type="submit" id="register">Register Account</button>
+               <br>
+               <hr>
+               <button id="registerg" role="button">Register with Google</button>
+               <br>
+               <button id="registerf" role="button">Register with Facebook</button>
+               <hr>
+               <br>
+               <a href="">Forgot Password?</a>
+               <br><br>
+               <a href="index.html">Already have an account? Login!</a>
+            </form>
+                </center>
+
+            </div>
+        </div>
+    </div>
+</body>
+</html>

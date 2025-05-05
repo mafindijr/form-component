@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>lopgin page</title>
+    <style>
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        #preloader {
+            width: 100vw;
+            height: 100vh;
+            background-color: rgb(217, 235, 235);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        #preloader .progress {
+            color: black;
+            font-size: 24px;
+            font-weight: bold;
+            text-transform: uppercase;
+        }
+
+        .container {
+            background-color: rgba(39, 23, 185, 0.678);
+            height: 100vh;
+            width: 100vw;
+            padding-top: 100px;
+            
+
+        }
+        .login {
+            margin-left: auto;
+            margin-right: auto;
+            border-radius: 5px;
+           box-shadow: 1px 1px 6px rgba(0, 0, 0, 0.15);
+            height: 400px;
+            width: 600px;
+            display: flex;
+        }
+        .item-2 {
+            background-color: #fff;
+            width: 300px;
+            height: 400px;
+            padding: 20px;
+            font-size: 12px;
+            float: right;
+        }
+        #email {
+            border-radius: 20px;
+            padding: 5px;
+            width: 100%;
+        }
+        #password {
+            border-radius: 20px;
+            padding: 5px;
+            width: 100%;
+        }
+        #login {
+            border-radius: 15px;
+            width: 100%;
+            height: 30px;
+            border: none;
+            background-color: #251abd;
+            color: #fff;
+        }
+        #loging {
+            border-radius: 15px;
+            width: 100%;
+            height: 30px;
+            border: none;
+            background-color: #f5260a;
+            color: #fff;
+
+        }
+        #loginf {
+            border-radius: 15px;
+            width: 100%;
+            height: 30px;
+            border: none;
+            background-color: #251abd;
+            color: #fff;
+
+        }
+        .item-1 {
+            width: 300px;
+            height: 400px;
+            padding: 
+            float: left;
+            background-color: #fff;
+        }
+        #pic {
+            width: 300px;
+            height: 400px;
+        
+            
+        }
+        @media screen and (max-width: 700px)  {
+            .item-1 {
+                display: none;
+
+            }
+            .login {
+                width: 300px;
+                height: 400px;
+                margin-left: auto;
+                margin-right: auto;
+                border-radius: 5px;
+                border-radius: 1px 1px 6px rgba(0, 0, 0, 0.15);
+            }
+        }
+    </style>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i">
+</head>
+<body>
+    <div id="preloader">
+        <div class="progress">Loading...</div>
+    </div>
+    <div class="container">
+        <div class="login">
+            <div class="item-1">
+                <img id="pic" src="project-1/image/abdu.jpg" alt="">
+            </div>
+            <div class="item-2">
+                <center>
+                <h1>Welcome Back</h1>
+            <br>
+            <form action="submit" method="post">
+            <input type="email" id="email" name="email" placeholder="enter email address...">
+            <br><br>
+            <input type="password" name="password" id="password" placeholder="passwor?">
+            <br><br></center>
+             <span><input type="checkbox" style="padding-right: 20px;">Remember Me</span>
+            <br><br>
+            <center>
+            <button name="login" id="login" type="submit">login</button>
+            <br>
+            <br>
+            <hr>
+            <br>
+            <button name="login" id="loging" roll="button"><i class="fas fa-laugh-wink"></i>login with google</button>
+            <br><br>
+            <button name="login" id="loginf" role="button">login with facebook</button>
+            <br><br><hr>
+            </center>
+        </form>
+            <center><a href="http://">forgot passwor?</a>
+            <br>
+            <a href="index1.html">create an account!</a></center>
+
+            
+            </div>
+        </div>
+    </div>
+    <script>
+        var preloader = document.getElementById("preloader");
+        setTimeout(function() {
+            preloader.style.display = "none";
+        }, 3000);
+    </script>
+</body>
+</html>
